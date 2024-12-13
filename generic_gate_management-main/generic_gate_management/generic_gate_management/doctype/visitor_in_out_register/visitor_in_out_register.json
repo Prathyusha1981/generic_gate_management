@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "IN/OUT-.####",
+ "creation": "2024-12-09 10:31:13.041230",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_duor",
+  "qr_scanner",
+  "invite_visitor",
+  "type",
+  "column_break_y9sj",
+  "visitor_name",
+  "visitor_mobile",
+  "visitor_email",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_duor",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Visitor In Out Register"
+  },
+  {
+   "fieldname": "qr_scanner",
+   "fieldtype": "Data",
+   "label": "Qr Scanner",
+   "options": "Barcode"
+  },
+  {
+   "fieldname": "invite_visitor",
+   "fieldtype": "Link",
+   "label": "Invite Visitor",
+   "options": "Invite Visitor"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nIn\nOut"
+  },
+  {
+   "fieldname": "column_break_y9sj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "visitor_name",
+   "fieldtype": "Data",
+   "label": "Visitor Name"
+  },
+  {
+   "fieldname": "visitor_mobile",
+   "fieldtype": "Phone",
+   "label": "Visitor Mobile"
+  },
+  {
+   "fieldname": "visitor_email",
+   "fieldtype": "Data",
+   "label": "Visitor Email"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Visitor In Out Register"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-12 12:20:23.180905",
+ "modified_by": "Administrator",
+ "module": "Generic Gate Management",
+ "name": "Visitor In Out Register",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

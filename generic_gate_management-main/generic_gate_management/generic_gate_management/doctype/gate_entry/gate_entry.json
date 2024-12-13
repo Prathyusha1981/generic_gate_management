@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "autoname": "G-ENTRY.##",
+ "creation": "2024-12-07 15:10:52.861516",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_k2rb",
+  "po_number",
+  "vehicle_no",
+  "vehicle_photo",
+  "vendor_invoice_no",
+  "vendor_invoice_photo",
+  "amended_from",
+  "column_break_n9vj",
+  "vendor_invoice_date",
+  "vendor_invoice_quantity",
+  "invoice_amount",
+  "gate_entry_date",
+  "created_time",
+  "column_break_ptij",
+  "remarks",
+  "is_purchase_receipt_created",
+  "by_mobile_app"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_k2rb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "po_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "PO Number",
+   "options": "Purchase Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vehicle No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vendor_invoice_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vendor Invoice No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle_photo",
+   "fieldtype": "Attach Image",
+   "label": "Vehicle Photo",
+   "mandatory_depends_on": "eval:doc.vehicle_no ? 1 : 0\n"
+  },
+  {
+   "fieldname": "vendor_invoice_photo",
+   "fieldtype": "Attach Image",
+   "label": "Vendor Invoice Photo",
+   "mandatory_depends_on": "eval:doc.vendor_invoice_no ? 1 : 0"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gate Entry",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_n9vj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vendor_invoice_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Vendor Invoice Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vendor_invoice_quantity",
+   "fieldtype": "Float",
+   "label": "Vendor Invoice Quantity"
+  },
+  {
+   "fieldname": "invoice_amount",
+   "fieldtype": "Currency",
+   "label": "Invoice Amount"
+  },
+  {
+   "fieldname": "gate_entry_date",
+   "fieldtype": "Date",
+   "label": "Gate Entry Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "created_time",
+   "fieldtype": "Time",
+   "label": "Created Time"
+  },
+  {
+   "fieldname": "column_break_ptij",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_purchase_receipt_created",
+   "fieldtype": "Check",
+   "label": "Is Purchase Receipt Created"
+  },
+  {
+   "default": "0",
+   "fieldname": "by_mobile_app",
+   "fieldtype": "Check",
+   "label": "By Mobile App"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-10 17:13:31.405698",
+ "modified_by": "Administrator",
+ "module": "Generic Gate Management",
+ "name": "Gate Entry",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

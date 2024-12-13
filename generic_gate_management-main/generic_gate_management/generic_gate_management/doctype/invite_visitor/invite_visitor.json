@@ -1,0 +1,193 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "VSTPASS-.####",
+ "creation": "2024-12-09 10:23:56.783710",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_r1qi",
+  "scheduled_date",
+  "duration",
+  "column_break_obki",
+  "scheduled_time",
+  "invite_to_visitor_mobile",
+  "invite_to_visitor_email",
+  "multi_visit",
+  "visitee_details_section",
+  "pass_type",
+  "visitee_mobile",
+  "column_break_0r3j",
+  "whom_to_meet",
+  "visitee_email",
+  "amended_from",
+  "visitor_details_section",
+  "visitor_name",
+  "visitor_email",
+  "visitor_mobile",
+  "column_break_zh2x",
+  "visitor_company_name",
+  "department"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_r1qi",
+   "fieldtype": "Section Break",
+   "label": "Appointment Details"
+  },
+  {
+   "fieldname": "scheduled_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Scheduled Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "in_list_view": 1,
+   "label": "Duration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_obki",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scheduled_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Scheduled Time",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "invite_to_visitor_mobile",
+   "fieldtype": "Check",
+   "label": "Invite to Visitor Mobile"
+  },
+  {
+   "default": "0",
+   "fieldname": "invite_to_visitor_email",
+   "fieldtype": "Check",
+   "label": "Invite to Visitor Email"
+  },
+  {
+   "default": "0",
+   "fieldname": "multi_visit",
+   "fieldtype": "Check",
+   "label": "Multi Visit"
+  },
+  {
+   "fieldname": "visitee_details_section",
+   "fieldtype": "Section Break",
+   "label": "Visitee Details"
+  },
+  {
+   "fieldname": "pass_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Pass Type",
+   "options": "\nDelivery\nVendor\nContractor\nVisitor\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "visitee_mobile",
+   "fieldtype": "Phone",
+   "label": "Visitee Mobile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_0r3j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "whom_to_meet",
+   "fieldtype": "Data",
+   "label": "Whom to Meet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "visitee_email",
+   "fieldtype": "Data",
+   "label": "Visitee email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Invite Visitor",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "visitor_details_section",
+   "fieldtype": "Section Break",
+   "label": "Visitor Details"
+  },
+  {
+   "fieldname": "visitor_name",
+   "fieldtype": "Data",
+   "label": "Visitor Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "visitor_email",
+   "fieldtype": "Data",
+   "label": "Visitor Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "visitor_mobile",
+   "fieldtype": "Phone",
+   "label": "Visitor Mobile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_zh2x",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "visitor_company_name",
+   "fieldtype": "Data",
+   "label": "Visitor Company Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-12 11:56:55.799214",
+ "modified_by": "Administrator",
+ "module": "Generic Gate Management",
+ "name": "Invite Visitor",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
